@@ -9,7 +9,7 @@ int knapsack(int n, int s, int v[], int w[])
     {
         int op1 = knapsack(n - 1, s - w[n - 1], v, w) + v[n - 1];
         int op2 = knapsack(n - 1, s, v, w);
-        return max(op1, op2);21
+        return max(op1, op2);
     }
     else
     {
